@@ -1,0 +1,7 @@
+n = int(input())
+elements = input().strip().split()
+list = []
+for i in range(0,len(elements)):
+    list.append(int(elements[i]))
+t = tuple(list)
+print(hash(t))
