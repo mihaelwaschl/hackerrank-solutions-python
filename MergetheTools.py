@@ -12,4 +12,3 @@ def merge_the_tools(string, k):
 string = input()
 k = int(input())
 result = merge_the_tools(string,k)
-print(result)
