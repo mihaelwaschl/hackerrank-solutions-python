@@ -1,6 +1,7 @@
 from itertools import combinations
 
 string, k = input().split()
-result = list(combinations(string,int(k)))
+for i in range(1,int(k)+1):
+    result = list(combinations(sorted(string), i))
+    print(result)
 
-print(result)
