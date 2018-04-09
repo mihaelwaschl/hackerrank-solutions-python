@@ -10,6 +10,6 @@ for i in range(0,numCustomers):
     result = Counter(allShoes).keys()
     if size in result:
         sum += int(price)
-
+        allShoes.remove(size)
 
 print(sum)
