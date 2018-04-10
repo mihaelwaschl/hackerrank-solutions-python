@@ -9,5 +9,5 @@ for k,g in itertools.groupby(s):
 for i in range(len(group)):
     group_length = len(group[i])
     k = int(key[i])
-    print(tuple((group_length,k)),end=' ')
+    print((group_length,k),end=' ')
 
