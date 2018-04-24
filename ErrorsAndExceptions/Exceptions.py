@@ -6,8 +6,5 @@ for i in range(0,n):
     except ZeroDivisionError as e:
         print('Error Code:', e)
     except ValueError as f:
-<<<<<<< HEAD
         print('Error Code:', f)
-=======
         print('Error Code:', f)
->>>>>>> origin/master
