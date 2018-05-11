@@ -7,3 +7,4 @@ for i in range(0,n):
         print('Error Code:', e)
     except ValueError as f:
         print('Error Code:', f)
+        print('Error Code:', f)
