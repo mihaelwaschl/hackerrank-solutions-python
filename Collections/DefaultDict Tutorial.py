@@ -1,16 +1,10 @@
 from collections import defaultdict
-
-n, m = input().split()
 d = defaultdict(list)
+n,m=map(int,input().split())
 
-for a in range(0,int(n)):
-    d['A'].append(input())
-for b in range(int(m), int(n)-1):
-    d['B'].append(input())
-for i in d['B']:
-    for i2 in d['A']:
-        if i == 'a':
-            print('to je ok')
-# print(d['A'])
-# print(d['B'])
-
+for i in range(0,n):
+    word = input()
+    d[word].append(str(i +1))
+for i2 in range(m):
+    compareWord = input()
+    print(' '.join(d[compareWord]) or -1)
