@@ -1,12 +1,9 @@
-import textwrap
-
 def merge_the_tools(string, k):
-    length = len(string)
-    segments = textwrap.fill(string, length//k)
-    splited = segments.split('\n')
-    print(splited)
-    for i in splited:
-        result = ''.join(set(i))
+    for i in range(len(string)//k):
+        result = ''
+        for j in string[i*k:i*k+k]:
+            if j not in result:
+                result += j
         print(result)
 
 string = input()
