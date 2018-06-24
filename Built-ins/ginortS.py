@@ -15,6 +15,4 @@ for letter in string:
         else:
             num_evan += letter
 
-sorted_upper = ''.join(sorted(uper_case))
-sorted_odd = ''.join(sorted(uper_case))
 print(''.join(sorted(lower_case)) + ''.join(sorted(uper_case)) + ''.join(sorted(num_odd)) + ''.join(sorted(num_evan)))
