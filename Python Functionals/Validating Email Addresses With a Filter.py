@@ -1,16 +1,8 @@
 import re
 
-n = int(input())
-allmails = ''
-for i in range(n):
-    mail = str(input())
-    allmails += mail +'\n'
+all_mails = []
+for i in range(int(input())):
+    all_mails.append(input())
+result = list(filter(lambda x: re.search(r'^[a-z0-9_-]+@+[a-z0-9]+\.\w{1,3}$', x , re.IGNORECASE), all_mails))
+print(sorted(result))
 
-pattern = re.compile(r'^[-a-zA-Z0-9_]+@[a-zA-Z0-9]+\.\w{1,3}$')
-finded = pattern.findall(allmails)
-
-result = []
-for match in finded:
-    result.append(match)
-
-print(result)
