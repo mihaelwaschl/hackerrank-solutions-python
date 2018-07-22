@@ -6,5 +6,7 @@ root = ET.fromstring(xml)
 num_attr = len(root.attrib)
 for child in root:
     num_attr += len(child.attrib)
+    for element in child:
+        num_attr += len(element.attrib)
 print(num_attr)
 
